@@ -16,7 +16,7 @@
 			<label for = "shippingZip">Zip code:</label>
 			<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
 		</fieldset>
-		<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>
+		<input type="checkbox" id="same" onchange= "billingFunction()"/>
 		<label for = "same">Is the Billing Information the Same?</label>
 				
 		<fieldset> 
@@ -26,7 +26,7 @@
 			<label for = "billingZip">Zip code:</label>
 			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
 		</fieldset>
-			<input type = "submit" value = "Verify"/>
+			<input onclick="verifyFunction()" type = "submit" value = "Verify"/>
         </form>
 </body>
 </html>
